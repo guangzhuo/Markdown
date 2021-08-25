@@ -1,0 +1,1 @@
+![ajax整体流程图](http://upload-images.jianshu.io/upload_images/1186791-91f5e8f74a621d43.png)

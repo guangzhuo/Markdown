@@ -1,0 +1,5 @@
+React Hooks 如何保存状态
+React 官方文档中有提到，React Hooks 保存状态的位置其实与类组件的一致；翻看源码后，我发现这样的说法没错，但又不全面：
+
+两者的状态值都被挂载在组件实例对象FiberNode的memoizedState属性中。
+两者保存状态值的数据结构完全不同；类组件是直接把 state 属性中挂载的这个开发者自定义的对象给保存到memoizedState属性中；而 React Hooks 是用链表来保存状态的，memoizedState属性保存的实际上是这个链表的头指针。
